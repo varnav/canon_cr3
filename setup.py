@@ -22,11 +22,18 @@ description = '''Package for extracting images and metadata out of Canon CR3 RAW
 
 setup(
     name='canon_cr3',
-    version='13mar2019',
+    version='2019.3',
+    maintainer="Evgeny Varnavskiy",
+    maintainer_email="varnavruz@gmail.com",
     packages=['canon_cr3'],
     keywords='Canon cr3',
-    url='https://github.com/superadm1n/CiscoAutomationFramework',
+    url='https://github.com/varnav/canon_cr3',
     license='GPLv3',
     description='Package for extracting images and metadata out of Canon CR3 RAW image files',
     long_description=description,
+    classifiers=[
+        "Topic :: Scientific/Engineering :: Image Processing",
+        "Topic :: Multimedia :: Graphics",
+        "Programming Language :: Python :: 3",
+    ],
 )

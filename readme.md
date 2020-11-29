@@ -1,5 +1,9 @@
 # Describing the Canon Raw v3 (CR3) file format #
 
+##
+
+From varnav: This repo was cloned and several patches to Python lib were applied.
+
 version: 22jul2020 
 
 by Laurent Clévy (@Lorenzo2472)
