@@ -1,8 +1,27 @@
 # Describing the Canon Raw v3 (CR3) file format #
 
-##
+## IMPORTANT
 
-From varnav: This repo was cloned and several patches to Python lib were applied.
+[Original repo](https://github.com/lclevy/canon_cr3) was cloned and several patches that were breaking the build of Python lib were applied. It's now [available at PyPi](https://pypi.org/project/canon-cr3/). This means you can do this:
+
+```sh
+pip install canon-cr3
+```
+
+and then
+
+```python
+from canon_cr3 import Image as Image3
+from PIL import Image
+
+im = Image3('/tmp/myphoto.cr3')
+im = Image.open(io.BytesIO(im.jpeg_image))
+```
+
+Please [mail me](varnavruz@gmail.com) if you want to be the maintainer of this.'''
+
+## Original doc below
+
 
 version: 22jul2020 
 

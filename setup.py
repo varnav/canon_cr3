@@ -19,10 +19,29 @@ along with cannon_cr3. If not, see <http://www.gnu.org/licenses/>.
 from setuptools import setup
 
 description = '''Package for extracting images and metadata out of Canon CR3 RAW image files'''
+long_description = '''## IMPORTANT
+
+[Original repo](https://github.com/lclevy/canon_cr3) was cloned and several patches that were breaking the build of Python lib were applied. It's now [available at PyPi](https://pypi.org/project/canon-cr3/). This means you can do this:
+
+```sh
+pip install canon-cr3
+```
+
+and then
+
+```python
+from canon_cr3 import Image as Image3
+from PIL import Image
+
+im = Image3('/tmp/myphoto.cr3')
+im = Image.open(io.BytesIO(im.jpeg_image))
+```
+
+Please [mail me](varnavruz@gmail.com) if you want to be the maintainer of this.'''
 
 setup(
     name='canon_cr3',
-    version='2019.3a',
+    version='2019.3.2',
     maintainer="Evgeny Varnavskiy",
     maintainer_email="varnavruz@gmail.com",
     packages=['canon_cr3'],
@@ -30,8 +49,10 @@ setup(
     url='https://github.com/varnav/canon_cr3',
     license='GPLv3',
     description='Package for extracting images and metadata out of Canon CR3 RAW image files',
-    long_description=description,
+    long_description=long_description,
+    long_description_content_type="text/markdown",
     classifiers=[
+        "Development Status :: 3 - Alpha",
         "Topic :: Scientific/Engineering :: Image Processing",
         "Topic :: Multimedia :: Graphics",
         "Programming Language :: Python :: 3",
