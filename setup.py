@@ -22,7 +22,7 @@ description = '''Package for extracting images and metadata out of Canon CR3 RAW
 
 setup(
     name='canon_cr3',
-    version='2019.3',
+    version='2019.3a',
     maintainer="Evgeny Varnavskiy",
     maintainer_email="varnavruz@gmail.com",
     packages=['canon_cr3'],
